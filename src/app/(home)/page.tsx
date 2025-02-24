@@ -63,6 +63,7 @@ import ProductSlider from '@/components/shared/product/ProductSlider'
 
      const todaysDeals = await getProductsByTag({ tag: 'todays-deal' })
 
+
      const bestSellingProducts = await getProductsByTag({ tag: 'best-seller' })
 
      return (

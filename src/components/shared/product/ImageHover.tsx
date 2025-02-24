@@ -13,14 +13,12 @@
    }) => {
      const [isHovered, setIsHovered] = useState(false)
      let hoverTimeout: ReturnType<typeof setTimeout>
-/*************  ✨ Codeium Command ⭐  *************/
      /**
       * When the user hovers over the image, this function is called. It waits 500ms
       * before setting `isHovered` to true. This delay is important because it allows
       * the user to quickly move their mouse over the image without triggering the
       * hover effect.
       */
-/******  79d5e239-dfd9-4282-a2c5-0bce1ebb29c3  *******/
      const handleMouseEnter = () => {
        hoverTimeout = setTimeout(() => setIsHovered(true), 500) 
      }
