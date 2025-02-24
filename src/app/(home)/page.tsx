@@ -6,6 +6,7 @@ import { HomeCard } from '@/components/shared/home/home-card'
    import { toSlug } from '@/lib/utils'
 import { Card, CardContent } from '@/components/ui/card'
 import ProductSlider from '@/components/shared/product/ProductSlider'
+import BrowsingHistoryList from '@/components/shared/browsing-history-list'
 
    export default async function HomePage() {
      const categories = (await getAllCategories()).slice(0, 4)
@@ -90,6 +91,10 @@ import ProductSlider from '@/components/shared/product/ProductSlider'
      </Card>
   
          </div>
+
+         <div className='p-4 bg-background'>
+     <BrowsingHistoryList />
+   </div>
        </>
      )
    }
